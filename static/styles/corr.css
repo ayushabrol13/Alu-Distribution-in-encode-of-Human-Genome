@@ -1,0 +1,52 @@
+body {
+  background: url("/static/styles/a_n.jpg");
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 150px;
+  color: bisque;
+}
+
+.bt::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.bt:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.bt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200 100% 80%);
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.bt {
+  position: relative;
+  font-size: 2.5rem;
+  background-color: lightyellow;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
