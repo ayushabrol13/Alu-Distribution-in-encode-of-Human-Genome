@@ -36,18 +36,20 @@
         class="bt list-group-item list-group-item-action"
         aria-current="true"
       >
-        Transcription Factor's ({{ tf }}) overlapping with Alu repeats
+        Barplots of Transcription Factor's ({{ tf }}) overlapping with Alu
+        repeats
       </a>
       <a
         href="{{ url_for('sendPlot', filename='Barplot2') }}"
         class="bt list-group-item list-group-item-action"
-        >Transcription Factor's ({{ tf }}) presence on Alu repeats</a
+        >Chromosome - wise Transcription Factor's ({{ tf }}) presence on Alu
+        repeats</a
       >
       <a
         href="{{ url_for('sendPlot', filename='Countplot') }}"
         class="bt list-group-item list-group-item-action"
-        >Transcription Factor's ({{ tf }}) presence on Alu repeats in different
-        chromosomes</a
+        >Alu Distribution after intersection with Transcription Factor's ({{ tf
+        }}) in different chromosomes (hg 19)</a
       >
       <a
         href="{{ url_for('sendPlot', filename='Distplot') }}"
@@ -58,9 +60,9 @@
       <a
         href="{{ url_for('sendPlot', filename='Lineplot') }}"
         class="bt list-group-item list-group-item-action"
-        >Transcription Factor's ({{ tf }}) overlapping with Alu repeats
-        (Lineplot)</a
-      >
+        >Lineplot of Transcription Factor's ({{ tf }}) overlapping with Alu
+        repeats
+      </a>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
