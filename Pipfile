@@ -12,6 +12,7 @@ seaborn = "*"
 pybedtools = "*"
 streamlit = "*"
 gunicorn = "*"
+waitress = "*"
 
 [dev-packages]
 
