@@ -18,4 +18,4 @@ def correlations():
         main(tf)
         return render_template('correlations.html', tf=tf)
         
-app.run(debug=True)
+app.run()
